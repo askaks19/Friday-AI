@@ -14,7 +14,7 @@ recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
 def aiProcess(command):
-    genai.configure(api_key="AIzaSyAQ1JrlMZUoFtkBj5YyRzYuWm532HLjsXs")
+    genai.configure(api_key="[your api key]")
 
     model = genai.GenerativeModel(
         model_name="gemini-1.5-flash",
@@ -114,3 +114,4 @@ if __name__ == "__main__":
                     processCommand(command2)
         except Exception as e:
             print("Error: {0}".format(e))
+
